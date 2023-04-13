@@ -4,8 +4,8 @@ import {
   Outlet,
 } from "@remix-run/react";
 
-import styles from './styles/index.css'
-import Header from "./components/header.jsx";
+import styles from '~/styles/index.css'
+import Header from "~/components/header.jsx";
 
 
 export function links() {
@@ -37,7 +37,6 @@ export function links() {
 export default function App() {
   return (
     <Document>
-      <Header />
       <Outlet />
     </Document>
   )
@@ -54,6 +53,7 @@ export function Document({ children }) {
         <Links />
       </head>
       <body>
+        <Header />
         {children}
 
       </body>
