@@ -5,6 +5,7 @@ import {
 } from "@remix-run/react";
 
 import styles from './styles/index.css'
+import Header from "./components/header.jsx";
 
 
 export function links() {
@@ -36,6 +37,7 @@ export function links() {
 export default function App() {
   return (
     <Document>
+      <Header />
       <Outlet />
     </Document>
   )
