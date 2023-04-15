@@ -8,8 +8,7 @@ import {
 
 import styles from '~/styles/index.css'
 import Header from "~/components/header.jsx";
-
-
+import Footer from "~/components/footer.jsx";
 
 
 export function links() {
@@ -60,6 +59,7 @@ export function Document({ children }) {
       <body>
         <Header />
         {children}
+        <Footer />
         <Scripts />
         <LiveReload />
       </body>
